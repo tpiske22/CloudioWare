@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InviteTableViewCell" customModule="CloudioWare" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8cW-Dq-GDz" customClass="InviteTableViewCell" customModule="CloudioWare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGH-Wf-dpl" userLabel="Tag">
+                    <rect key="frame" x="8" y="6" width="64" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="43" id="Wz2-rQ-4Es"/>
+                        <constraint firstAttribute="height" constant="43" id="cMM-Db-isz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="0.25098039220000001" green="0.6588235294" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-oB-D1k" userLabel="Tag">
+                    <rect key="frame" x="8" y="57" width="364" height="21"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFJ-T9-fxF">
+                    <rect key="frame" x="319" y="11" width="53" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="a0r-9V-nsH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Decline">
+                        <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="declineTapped:" destination="8cW-Dq-GDz" eventType="touchUpInside" id="MXh-et-yx8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8u-WW-dZ2">
+                    <rect key="frame" x="260" y="11" width="51" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="tBy-f8-bzK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                    <state key="normal" title="Accept">
+                        <color key="titleColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="acceptTapped:" destination="8cW-Dq-GDz" eventType="touchUpInside" id="Up0-sn-6GG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6sz-tV-y8u" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cSi-oB-D1k" secondAttribute="bottom" constant="8" id="3id-Dc-MPo"/>
+                <constraint firstItem="BGH-Wf-dpl" firstAttribute="leading" secondItem="6sz-tV-y8u" secondAttribute="leading" constant="8" id="4vh-NW-szk"/>
+                <constraint firstItem="oFJ-T9-fxF" firstAttribute="centerY" secondItem="BGH-Wf-dpl" secondAttribute="centerY" id="9tF-lV-eCu"/>
+                <constraint firstItem="oFJ-T9-fxF" firstAttribute="top" secondItem="V8u-WW-dZ2" secondAttribute="top" id="C7Q-HL-dY1"/>
+                <constraint firstItem="oFJ-T9-fxF" firstAttribute="leading" secondItem="V8u-WW-dZ2" secondAttribute="trailing" constant="8" id="GSl-rF-xhU"/>
+                <constraint firstItem="cSi-oB-D1k" firstAttribute="leading" secondItem="6sz-tV-y8u" secondAttribute="leading" constant="8" id="PyN-cc-Y7L"/>
+                <constraint firstAttribute="trailing" secondItem="oFJ-T9-fxF" secondAttribute="trailing" constant="8" id="buu-Dp-OgD"/>
+                <constraint firstItem="6sz-tV-y8u" firstAttribute="trailing" secondItem="cSi-oB-D1k" secondAttribute="trailing" constant="8" id="few-9z-2gs"/>
+                <constraint firstItem="cSi-oB-D1k" firstAttribute="top" secondItem="BGH-Wf-dpl" secondAttribute="bottom" constant="8" id="gVE-Re-8DB"/>
+                <constraint firstItem="BGH-Wf-dpl" firstAttribute="top" secondItem="8cW-Dq-GDz" secondAttribute="top" constant="6" id="mrh-3J-5wk"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6sz-tV-y8u"/>
+            <connections>
+                <outlet property="acceptButton" destination="V8u-WW-dZ2" id="B4y-5c-H2u"/>
+                <outlet property="declineButton" destination="oFJ-T9-fxF" id="p8f-0i-PuB"/>
+                <outlet property="messageLabel" destination="cSi-oB-D1k" id="ybz-gW-Rtm"/>
+                <outlet property="tagLabel" destination="BGH-Wf-dpl" id="Ymf-ss-cwz"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="-283.92857142857139"/>
+        </view>
+    </objects>
+</document>

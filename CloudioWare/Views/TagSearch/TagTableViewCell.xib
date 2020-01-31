@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TagTableViewCell" customModule="CloudioWare" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TagTableViewCell" customModule="CloudioWare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJn-Wq-hxc" userLabel="Tag">
+                    <rect key="frame" x="16" y="6" width="64" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="zvD-lL-Lq2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" red="0.25098039220000001" green="0.6588235294" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2W-oV-1gj" userLabel="OnlineStatus">
+                    <rect key="frame" x="16" y="53" width="35" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4vy-vN-eGs"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.80000000000000004" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EJn-Wq-hxc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="6" id="AEV-WN-7Po"/>
+                <constraint firstAttribute="bottom" secondItem="G2W-oV-1gj" secondAttribute="bottom" constant="6" id="BMb-T4-Wp8"/>
+                <constraint firstItem="G2W-oV-1gj" firstAttribute="leading" secondItem="EJn-Wq-hxc" secondAttribute="leading" id="ONr-Jz-kTc"/>
+                <constraint firstItem="EJn-Wq-hxc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dUX-sa-2RB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="onlineStatusLabel" destination="G2W-oV-1gj" id="MDu-7F-Fbc"/>
+                <outlet property="tagLabel" destination="EJn-Wq-hxc" id="SkR-84-Cer"/>
+            </connections>
+            <point key="canvasLocation" x="142.40000000000001" y="-130.43478260869566"/>
+        </view>
+    </objects>
+</document>
